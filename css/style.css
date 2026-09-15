@@ -1,0 +1,96 @@
+.box-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.box {
+  width: 100px;
+  min-height: 60px;
+  background-color: lightgray;
+}
+
+/* Border */
+
+.border-0 {
+  border: 0 solid black;
+}
+
+.border-5 {
+  border: 5px solid black;
+}
+
+.border-10 {
+  border: 10px solid black;
+}
+
+/* Padding */
+
+.padding-0 {
+  padding: 0;
+  border: 2px solid black;
+}
+
+.padding-5 {
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.padding-10 {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* Margin */
+
+.margin-0 {
+  margin: 0;
+  border: 2px solid black;
+}
+
+.margin-5 {
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.margin-10 {
+  margin: 10px;
+  border: 2px solid black;
+}
+
+/* Positioning */
+
+.position-container {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.sticky-note {
+  position: sticky;
+  top: 0;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Ken Yong's CS5610 self assessment covering HTML, CSS, JavaScript and web development concepts."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HTML, CSS and JavaScript Self Assessment | Ken Yong</title>
+  </head>
+
+  <body>
+    <!-- Requirement 1:HTML. Create a webpage with a navbar, some main content with one main header and 4 subheaders and sections, 
+     and a footer. Also provide a list of the 10 most useful tags (e.g. div) for you in HTML -->
+    <nav>
+      <!-- Navigation Bar -->
+      <a href="#html-tags">🔺HTML Tags</a>
+      <a href="#about-html">🔺About HTML</a>
+      <a href="#about-css">🔺About CSS</a>
+      <a href="#what-i-learned">🔺What I Learned</a>
+      <a href="#seo">🔺SEO</a>
+      <a href="#grid">🔺3x3 Grid</a>
+      <a href="#box-model">🔺Box Model</a>
+      <a href="#font-sizes">🔺Font Sizes</a>
+      <a href="#positioning">🔺Positioning</a>
+    </nav>
+
+    <main>
+      <!-- Main Content -->
+      <h1>HTML + CSS + JavaScript self assessment</h1>
+
+      <section id="html-tags">
+        <h2>10 Useful HTML Tags</h2>
+        <!-- Section heading 1 -->
+
+        <ol>
+          <!-- Order list for 10 most useful tags  -->
+          <li><code>&lt;html&gt;</code> = Root element of an HTML document</li>
+          <li><code>&lt;head&gt;</code> = Contains document metadata</li>
+          <li><code>&lt;body&gt;</code> = Contains the visible page content</li>
+          <li><code>&lt;h1&gt;</code> = Main heading</li>
+          <li><code>&lt;p&gt;</code> = Paragraph</li>
+          <li><code>&lt;a&gt;</code> = Link</li>
+          <li><code>&lt;img&gt;</code> = Image</li>
+          <li><code>&lt;div&gt;</code> = Generic block container</li>
+          <li><code>&lt;ul&gt;</code> = Unordered list</li>
+          <li><code>&lt;li&gt;</code> = List item</li>
+        </ol>
+      </section>
+
+      <section id="about-html">
+        <h2>About HTML</h2>
+        <!-- Section heading 2 -->
+        <p>
+          HTML, or HyperText Markup Language, is the standard language used to
+          create and structure content on the web. Using a system of tags, like
+          &lt;p&gt; for paragraphs, &lt;img&gt; for images, and &lt;a&gt; for
+          links, HTML tells browsers how to display text, images, and other
+          content on a page. Rather than handling logic or calculations like a
+          programming language, HTML focuses on defining structure and meaning,
+          forming the basic skeleton behind every website.
+        </p>
+        <p>
+          HTML rarely works alone, it pairs with CSS for styling and JavaScript
+          for interactivity to create the websites we use every day. Its
+          semantic structure also helps search engines understand page content
+          and allows assistive technologies to support users with disabilities.
+          Because of this, HTML remains the essential starting point for anyone
+          learning web development or design.
+        </p>
+      </section>
+
+      <section id="about-css">
+        <h2>About CSS</h2>
+        <!-- Section heading 3 -->
+        <p>
+          CSS, or Cascading Style Sheets, is the language used to control how a
+          webpage looks and is laid out. While HTML defines the structure and
+          content of a page, CSS handles the visual presentation, things like
+          colors, fonts, spacing, and positioning. Using selectors and
+          property-value pairs, such as <code>color: blue;</code> or
+          <code>font-size: 16px;</code>, CSS lets developers target specific
+          HTML elements and apply styles to them, either individually or across
+          an entire site.
+        </p>
+        <p>
+          CSS gets its name from the "cascading" way styles are applied, rules
+          can come from multiple sources, and more specific or later-declared
+          rules can override earlier ones. Beyond basic styling, CSS also
+          enables responsive design, allowing websites to adapt their layout for
+          different screen sizes like phones, tablets, and desktops. Alongside
+          HTML and JavaScript, CSS is one of the three core technologies of the
+          web, and mastering it is essential for creating visually polished,
+          user-friendly websites.
+        </p>
+      </section>
+
+      <section id="what-i-learned">
+        <h2>What I Learned</h2>
+        <!-- Section heading 4 -->
+        <p>
+          Going through the HTML documentation on MDN gave me a much deeper
+          understanding of how web pages are structured beyond just the basics.
+          I learned about semantic elements like <code>&lt;header&gt;</code>,
+          <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and
+          <code>&lt;footer&gt;</code>, and why using the right tag for the right
+          purpose matters, not just for organizing content, but for
+          accessibility and SEO as well. I also picked up on important concepts
+          like the difference between block-level and inline elements, how
+          attributes work within tags, and best practices for structuring forms,
+          tables, and media elements properly. Overall, it helped me see HTML
+          not just as a way to "make text appear on a page," but as a way to
+          communicate meaning and structure to both browsers and users.
+        </p>
+        <p>
+          On the CSS side, MDN helped me understand how styling really works
+          under the hood, especially concepts like the box model, specificity,
+          and the cascade which explained a lot of confusing behavior I used to
+          run into when styles didn't apply the way I expected. I learned how
+          selectors, combinators, and pseudo-classes give fine-grained control
+          over which elements get styled, and how layout systems like Flexbox
+          and Grid make it much easier to build responsive designs compared to
+          older methods like floats. By the end, I had a clearer picture of how
+          HTML and CSS work together, HTML providing the structure, and CSS
+          shaping how that structure is presented which has made me more
+          confident about building clean, well-organized web pages.
+        </p>
+      </section>
+
+      <!-- Move requirement 6 to here to better show on sticky positioning -->
+      <!-- Requirement 6: CSS. Add a creative part of the page that uses 4 different positioningLinks to an external site. options. 
+      Try to think and explain when would you use these options. Use that positioning to make sure that your footer stays on the bottom of the screen -->
+
+      <section id="positioning">
+        <h2>CSS Positioning Examples</h2>
+
+        <h3>Relative and Absolute Positioning</h3>
+
+        <div class="position-container">
+          Relative Parent
+
+          <div class="absolute-box">Absolute</div>
+        </div>
+
+        <h3>Sticky Positioning</h3>
+
+        <div class="sticky-note">
+          Sticky: I stay at the top while you scroll.
+        </div>
+
+        <h3>When I Would Use Each Position</h3>
+
+        <ul>
+          <li>
+            <strong>Relative:</strong> I would use relative positioning when I
+            want to slightly move an element from its normal position or create
+            a positioning reference for an absolute child.
+          </li>
+
+          <li>
+            <strong>Absolute:</strong> I would use absolute positioning when I
+            want to place something at a specific location inside a positioned
+            container like a notification badge.
+          </li>
+
+          <li>
+            <strong>Sticky:</strong> I would use sticky positioning for
+            something that should remain visible after scrolling to it like a
+            navigation bar or section heading.
+          </li>
+
+          <li>
+            <strong>Fixed:</strong> I would use fixed positioning when something
+            should stay in the same place on the screen like a footer or
+            floating help button.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Requirement 2: HTML. Research about SEO and provide a list of some of the most important header tags that you should add to your pages for SEO -->
+      <section id="seo">
+        <h2>Important HTML Head Elements for SEO</h2>
+
+        <p>
+          SEO, or Search Engine Optimization, helps search engines understand
+          the content of a webpage and how it should appear in search results.
+        </p>
+
+        <ul>
+          <li>
+            <code>&lt;title&gt;</code> - Defines the title of the webpage and
+            helps search engines understand the page's topic.
+          </li>
+
+          <li>
+            <code>&lt;meta name="description"&gt;</code> - Provides a short
+            description of the webpage that may be used in search results.
+          </li>
+
+          <li>
+            <code>&lt;meta name="robots"&gt;</code> - Tells search engines how
+            they are allowed to crawl or index the webpage.
+          </li>
+
+          <li>
+            <code>&lt;link rel="canonical"&gt;</code> - Identifies the preferred
+            URL when similar or duplicate versions of a page exist.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Requirement 3: HTML. In the page create a grid of 3x3 like layout without using table, or any css. Just use divs and spans -->
+      <section id="grid">
+        <h2>3x3 Layout Using Divs and Spans</h2>
+
+        <div>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+
+        <div>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+        </div>
+
+        <div>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+        </div>
+      </section>
+
+      <!-- Requirement 4: CSS. Create a gallery that showcases the options for the box model using css  
+       For each row change the values of border, margin and padding. For the columns try three different values (e.g. 0px 5px 10px) -->
+      <section id="box-model">
+        <h2>CSS Box Model Gallery</h2>
+
+        <h3>Border</h3>
+        <div class="box-row">
+          <div class="box border-0">0px</div>
+          <div class="box border-5">5px</div>
+          <div class="box border-10">10px</div>
+        </div>
+
+        <h3>Padding</h3>
+        <div class="box-row">
+          <div class="box padding-0">0px</div>
+          <div class="box padding-5">5px</div>
+          <div class="box padding-10">10px</div>
+        </div>
+
+        <h3>Margin</h3>
+        <div class="box-row">
+          <div class="box margin-0">0px</div>
+          <div class="box margin-5">5px</div>
+          <div class="box margin-10">10px</div>
+        </div>
+      </section>
+
+      <!-- Requirement 5: CSS. Create an itemized list with the same text and 6 different font sizes, use inline styling. 
+       Choose a combination of absolute and relative sizes. Explain on each item when would you use that unit by means of an example -->
+      <section id="font-sizes">
+        <h2>CSS Font Size Units</h2>
+
+        <ul>
+          <li style="font-size: 16px">
+            This is my CS5610 first self assessment. — 16px (Absolute, px):
+            I'd use px when I want a predictable, fixed size, like a button
+            label.
+          </li>
+
+          <li style="font-size: 14pt">
+            This is my CS5610 first self assessment. — 14pt (Absolute, pt):
+            I'd use pt mainly for print styling like text in a printed document.
+          </li>
+
+          <li style="font-size: 0.5cm">
+            This is my CS5610 first self assessment. — 0.5cm (Absolute, cm):
+            I'd use cm when working with physical dimensions like a page meant for printing.
+          </li>
+
+          <li style="font-size: 1.2em">
+            This is my CS5610 first self assessment. — 1.2em (Relative, em):
+            I'd use em when I want text to scale relative to its parent's font
+            size like text inside a reusable component.
+          </li>
+
+          <li style="font-size: 1.5rem">
+            This is my CS5610 first self assessment. — 1.5rem (Relative,
+            rem): I'd use rem when I want sizing to stay consistent relative to
+            the root font size like headings across a site.
+          </li>
+
+          <li style="font-size: 120%">
+            This is my CS5610 first self assessment. — 120% (Relative, %):
+            I'd use percentage when I want text to scale relative to its parent's size.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer -->
+      <p>Ken Yong's CS5610 Self Assessment</p>
+    </footer>
+  </body>
+</html>
